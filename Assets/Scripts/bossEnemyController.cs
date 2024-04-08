@@ -18,7 +18,7 @@ public class bossEnemyController : MonoBehaviour
     void Update()
     {
         // se till att fienderna rör sig till vänster mott karakären
-        float speed = 0.1f;
+        float speed = 1f;
 
         Vector2 movement = Vector2.left * speed * Time.deltaTime;
 
