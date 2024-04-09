@@ -418,7 +418,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 2.5999985, y: 3}
+  m_AnchoredPosition: {x: 2.600006, y: 3}
   m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &302729657
@@ -703,14 +703,14 @@ RectTransform:
   m_GameObject: {fileID: 445357359}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9375, y: 0.78749, z: 1}
+  m_LocalScale: {x: 0.9375, y: 0.63983566, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 847170964}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 2.699997, y: 0}
+  m_AnchoredPosition: {x: 2.7000122, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &445357361
@@ -995,6 +995,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 847170966}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.9960785, g: 0.20784315, b: 0.27058825, a: 1}
+    key1: {r: 1, g: 0.9492754, b: 0, a: 1}
+    key2: {r: 0, g: 1, b: 0.06425047, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 16384
+    ctime1: 32768
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 1
+    m_ColorSpace: -1
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2
+  fill: {fileID: 0}
 --- !u!114 &847170966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1797,6 +1828,10 @@ PrefabInstance:
       propertyPath: speed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2974008496218630713, guid: a7d0ef7f9a65a9e4e84c9d8c90da24dc, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 847170965}
     - target: {fileID: 2974008496218630713, guid: a7d0ef7f9a65a9e4e84c9d8c90da24dc, type: 3}
       propertyPath: jumpForce
       value: 200

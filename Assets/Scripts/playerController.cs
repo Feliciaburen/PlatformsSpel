@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour
 {
+    [SerializeField]
+    int maxHealth = 4;
+    
+    [SerializeField]
+    int currentHealth;
 
-    public int maxHealth = 4;
-    public int currentHealth;
+    [SerializeField]
+    HealthBar healthBar;
 
     [SerializeField]
     float speed = 5;
@@ -38,6 +43,7 @@ public class playerController : MonoBehaviour
     void Awake()
     {
         currentHealth = maxHealth;
+        healthBar.setMaxHealth(maxHealth);
         rBody = GetComponent<Rigidbody2D>();
     }
     // Update is called once per frame
@@ -99,13 +105,19 @@ public class playerController : MonoBehaviour
     {
         if (other.gameObject.tag == "enemy")
         {
-            currentHealth -= 25;
+            takeDamage(1);
 
-            if (currentHealth <= 0)
+            /*if (currentHealth <= 0)
             {
                 SceneManager.LoadScene(1);
-            }
-
+            }*/
         }
+    }
+
+    void takeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        healthBar.setHealth(currentHealth);
     }
 }
