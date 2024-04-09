@@ -103,14 +103,14 @@ public class playerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "enemy")
+        if (other.gameObject.tag == "enemyBullet")
         {
             takeDamage(1);
 
-            /*if (currentHealth <= 0)
+            if (currentHealth <= 0)
             {
                 SceneManager.LoadScene(1);
-            }*/
+            }
         }
     }
 

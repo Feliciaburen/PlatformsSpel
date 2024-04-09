@@ -26,18 +26,7 @@ public class HealthBar : MonoBehaviour
     {
         slider.value = health;
 
-
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        fill.color = gradient.Evaluate(slider.normalizedValue);
 
     }
 }

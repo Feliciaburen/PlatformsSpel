@@ -8,11 +8,11 @@ public class Enemy1Controller : MonoBehaviour
     void Update()
     {
         // se till att fienderna rör sig till vänster mott karakären
-        float speed = 1;
+        /*float speed = 1;
 
         Vector2 movement = Vector2.left * speed * Time.deltaTime;
 
-        transform.Translate(movement);
+        transform.Translate(movement);*/
     }
 
     // när skottet kommer i kontakt med fienden så förstörs fienden (dör)

@@ -10,6 +10,9 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     GameObject enemy;
 
+    [SerializeField]
+    GameObject weapon;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
