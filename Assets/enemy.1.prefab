@@ -143,4 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6916bef93c31ed4ab8e6166d5e9c7cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 3705871990376292685, guid: 5274efc243a300140aa3c1d314548b4d, type: 3}
+  gunPosition: {fileID: 0}
+  timeBetweenShots: 1

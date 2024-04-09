@@ -8,6 +8,7 @@ TagManager:
   - enemy
   - firework
   - bossEnemy
+  - enemyBullet
   layers:
   - Default
   - TransparentFX
