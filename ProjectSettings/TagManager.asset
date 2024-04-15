@@ -9,6 +9,7 @@ TagManager:
   - firework
   - bossEnemy
   - enemyBullet
+  - food
   layers:
   - Default
   - TransparentFX

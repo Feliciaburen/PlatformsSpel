@@ -103,20 +103,47 @@ public class playerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "enemyBullet")
+        if (other.gameObject.tag == "enemy")
         {
-            takeDamage(1);
+            takeAmount(1);
 
             if (currentHealth <= 0)
             {
                 SceneManager.LoadScene(1);
             }
         }
+
+        if (other.gameObject.tag == "bossEnemy")
+        {
+            takeAmount(2);
+
+            if (currentHealth <= 0)
+            {
+                SceneManager.LoadScene(1);
+            }
+        }
+
+        if (other.gameObject.tag == "food")
+        {
+            addAmount(1);
+
+            if (currentHealth >= 4)
+            {
+                currentHealth = maxHealth;
+            }
+        } 
     }
 
-    void takeDamage(int damage)
+    void takeAmount(int amount)
     {
-        currentHealth -= damage;
+        currentHealth -= amount;
+
+        healthBar.setHealth(currentHealth);
+    }
+
+    void addAmount(int amount)
+    {
+        currentHealth += amount;
 
         healthBar.setHealth(currentHealth);
     }

@@ -21,7 +21,7 @@ public class bulletControll : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "enemy" || other.gameObject.tag == "bossEnemy")
+        if (other.gameObject.tag == "enemy" || other.gameObject.tag == "bossEnemy" || other.gameObject.tag == "food")
         {
             Destroy(this.gameObject);
         }
