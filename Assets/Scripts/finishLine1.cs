@@ -8,14 +8,11 @@ public class finishLineController : MonoBehaviour
     [SerializeField]
     Transform spawnPoint;
 
-    [SerializeField]
-    GameObject firework;
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
-           SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
         }
     }
 }

@@ -10,8 +10,11 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     GameObject enemy;
 
+    /*[SerializeField]
+    Transform bulletSpawnPoint;
+
     [SerializeField]
-    GameObject weapon;
+    GameObject weapon;*/
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,6 +22,9 @@ public class EnemySpawner : MonoBehaviour
         {
             Instantiate(enemy, spawnPoint.position, Quaternion.identity);
             gameObject.SetActive(false);
+
+            //Instantiate(weapon, bulletSpawnPoint.position, Quaternion.identity);
+            //gameObject.SetActive(false);
         }
     }
 }

@@ -4,21 +4,8 @@ using UnityEngine;
 
 public class Enemy1Controller : MonoBehaviour
 {
-    [SerializeField]
-    GameObject bulletPrefab;
+    
 
-    [SerializeField]
-    Transform gunPosition;
-
-    float shotTimer = 0;
-
-    [SerializeField]
-    float timeBetweenShots = 1f;
-
-    private void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -30,13 +17,13 @@ public class Enemy1Controller : MonoBehaviour
 
         transform.Translate(movement);
 
-        shotTimer += Time.deltaTime;
+        /*shotTimer += Time.deltaTime;
 
         if (Input.GetAxisRaw("Fire1") > 0 && shotTimer > timeBetweenShots)
         {
             Instantiate(bulletPrefab, gunPosition.position, Quaternion.identity);
             shotTimer = 0;
-        }
+        }*/
     }
 
     // när skottet kommer i kontakt med fienden så förstörs fienden (dör)

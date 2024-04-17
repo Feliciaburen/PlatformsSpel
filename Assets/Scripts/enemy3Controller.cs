@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy2Controller : MonoBehaviour
+public class enemy3Controller : MonoBehaviour
 {
-
     void Update()
     {
         // se till att fienderna rör sig till vänster mott karakären

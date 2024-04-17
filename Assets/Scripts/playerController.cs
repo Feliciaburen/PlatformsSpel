@@ -109,7 +109,7 @@ public class playerController : MonoBehaviour
 
             if (currentHealth <= 0)
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(3);
             }
         }
 
@@ -119,11 +119,11 @@ public class playerController : MonoBehaviour
 
             if (currentHealth <= 0)
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(3);
             }
         }
 
-        if (other.gameObject.tag == "food")
+        if (other.gameObject.tag == "food" || "bolt" == "food")
         {
             addAmount(1);
 
